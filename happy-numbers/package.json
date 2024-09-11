@@ -1,6 +1,6 @@
 {
   "name": "happy-numbers",
-  "homepage": "https://github.com/SemaJenya/Happy_numbers",
+  "homepage": "./",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
