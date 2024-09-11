@@ -72,9 +72,9 @@ function App() {
 
       setMyArray([...myArray.map(item => {
         if (item.id == counter) {
-          return { ...item, isRightAnswer: true, answer: inputValue }
+          return { ...item, isRightAnswer: true, answer: inputValue };
         }
-        return item
+        return item;
       }), {
         id: counter + 1,
         firstNum: 4,
@@ -88,31 +88,29 @@ function App() {
     }
 
     else {
-      // console.log('uncorrect answer bbbbb');
+
       setMyArray(myArray.map((item) => {
         if (item.id == counter) {
-          return { ...item, isRightAnswer: false }
+          return { ...item, isRightAnswer: false };
         }
-        return item
+        return item;
       }))
       setInputColor('answer_input_red');
       setTimeout(() => {
         setInputColor('answer_input')
-      }, 1000)
+      }, 1000);
     }
 
     setIsMouseDown(false);
     setIsCorrectAnswer(false);
-
-
   }
-
 
 
   return (
     <div className="App">
       <form className='form'>
         <div className='form_container'>
+
           {myArray?.map((element, index) => {
             return (
               <div className='example_container' key={index}>
@@ -133,11 +131,8 @@ function App() {
                     <div className='help' key={`${index}-help`}></div>
                   )}
                 </div>
-
               </div>
-
             )
-
           })}
         </div>
 
