@@ -44,9 +44,13 @@ function App() {
     setIsDisabledButton(false);
   }
 
-  const handleClickButton = (e) => {
-    e.preventDefault();
-  }
+  // const handleClickButton = (e) => {
+  //   e.preventDefault();
+  // }
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  // }
 
   const handleMouseOver = () => {
     setIsMouseOver(true);
@@ -105,10 +109,15 @@ function App() {
     setIsCorrectAnswer(false);
   }
 
+  const handleSubmit = (e) => {
+    handleMouseDown(e);
+    handleMouseUp(e);
+  }
+
 
   return (
     <div className="App">
-      <form className='form'>
+      <form className='form' onSubmit={handleSubmit}>
         <div className='form_container'>
 
           {myArray?.map((element, index) => {
@@ -146,12 +155,12 @@ function App() {
                 s('button', 'button_over') :
                 'button'}
           disabled={(isDisabledButton || !inputValue) ? true : false}
-          type='button'
+          type='submit'
           onMouseDown={handleMouseDown}
           onMouseUp={handleMouseUp}
-          onClick={handleClickButton}
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}
+          
         >
           Done
         </button>
