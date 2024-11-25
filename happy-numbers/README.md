@@ -3,6 +3,8 @@
 ## What were used:  
 React;  
 ClassNames;  
-[Gh-pages](https://semajenya.github.io/Happy_numbers/);    
+[Gh-pages](https://semajenya.github.io/Happy_numbers/);      
+
+![Calculator]()
 
 
