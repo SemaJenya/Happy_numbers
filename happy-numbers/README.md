@@ -3,6 +3,6 @@
 ## What were used:  
 React;  
 ClassNames;  
-Gh-pages;    
+[Gh-pages](https://semajenya.github.io/Happy_numbers/);    
 
 
